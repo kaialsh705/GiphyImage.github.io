@@ -26,6 +26,8 @@ function doAjax(){
             response.json().then(data=>{
                 printImage(data);
             })
+        }).catch(err=>{
+            console.log("Error is comming")
         })
     }
 };       
